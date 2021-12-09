@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 06/15/20 19:25:04 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\guan\Desktop\test\bishe\03\03.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\guan\Desktop\test\bishe\03\03.net.xml"/>
+        <plain-output-prefix value="C:\Users\guan\Desktop\test\bishe\03\03"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="C:\Users\guan\Desktop\test\bishe\03\03.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<edges version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <edge id="1" from="01" to="02" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="10" from="010" to="011" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="11" from="011" to="012" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="12" from="012" to="013" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="13" from="013" to="014" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="15" from="015" to="02" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="16" from="05" to="016" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="17" from="017" to="06" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="18" from="09" to="018" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="19" from="019" to="010" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="2" from="02" to="03" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="20" from="013" to="020" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="3" from="03" to="04" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="4" from="04" to="05" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="5" from="05" to="06" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="6" from="06" to="07" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="7" from="07" to="08" priority="-1" numLanes="3" speed="13.89"/>
+    <edge id="8" from="08" to="09" priority="-1" numLanes="4" speed="13.89"/>
+    <edge id="9" from="09" to="010" priority="-1" numLanes="3" speed="13.89"/>
+</edges>

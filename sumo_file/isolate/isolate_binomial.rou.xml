@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-08-23 15:56:45 by Eclipse SUMO netedit Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/hitszjt/文档/atsc_deeprl/sumo_file/isolate/isowithped.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/hitszjt/文档/atsc_deeprl/sumo_file/isolate/isowithped.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="true"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="/home/hitszjt/文档/atsc_deeprl/sumo_file/isolate/isolate.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="type1" length="5.00" accel="5" decel="10" color="0,255,255"/>
+    <vType id="type2" length="5.00" accel="5" decel="10" color="255,0,0"/>
+    <vType id="type3" length="5.00" accel="5" decel="10" color="255,255,0"/>
+    <flow id="sn" type="type1" begin="0.00" departLane="random" departSpeed="max" end="3600.00" probability="0.05">
+        <route edges="s2c c2n" color="yellow"/>
+    </flow>
+
+    <flow id="ns" type="type2" begin="0.00" departLane="random" departSpeed="max" end="3600.00" probability="0.05">
+        <route edges="n2c c2s" color="yellow"/>
+    </flow>
+
+    <flow id="ew" type="type3" begin="0.00" departLane="random" departSpeed="max" end="3600.00" probability="0.05">
+        <route edges="e2c c2w" color="yellow"/>
+    </flow>
+
+    <flow id="we" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="w2c c2e" color="yellow"/>
+    </flow>
+
+    <flow id="sw" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="s2c c2w" color="yellow"/>
+    </flow>
+
+    <flow id="ws" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="w2c c2s" color="yellow"/>
+    </flow>
+
+    <flow id="se" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="s2c c2e" color="yellow"/>
+    </flow>
+
+    <flow id="es" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="e2c c2s" color="yellow"/>
+    </flow>
+
+    <flow id="ne" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="n2c c2e" color="yellow"/>
+    </flow>
+
+    <flow id="en" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="e2c c2n" color="yellow"/>
+    </flow>
+
+    <flow id="nw" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="n2c c2w" color="yellow"/>
+    </flow>
+
+    <flow id="wn" type="type1" begin="0.00" departLane="random" departSpeed="max" color="yellow" end="3600.00" probability="0.05">
+        <route edges="w2c c2n" color="yellow"/>
+    </flow>
+
+    <personFlow id="w1" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c c2s"/>
+    </personFlow>
+    <personFlow id="w2" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c s2c"/>
+    </personFlow>
+    <personFlow id="w3" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c c2n"/>
+    </personFlow>
+    <personFlow id="w4" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c n2c"/>
+    </personFlow>
+    <personFlow id="w5" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c c2e"/>
+    </personFlow>
+    <personFlow id="w6" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="w2c e2c"/>
+    </personFlow>
+
+    <personFlow id="e1" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c c2s"/>
+    </personFlow>
+    <personFlow id="e2" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c s2c"/>
+    </personFlow>
+    <personFlow id="e3" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c c2n"/>
+    </personFlow>
+    <personFlow id="e4" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c n2c"/>
+    </personFlow>
+    <personFlow id="e5" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c c2w"/>
+    </personFlow>
+    <personFlow id="e6" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="e2c w2c"/>
+    </personFlow>
+
+    <personFlow id="n1" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c c2s"/>
+    </personFlow>
+    <personFlow id="n2" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c s2c"/>
+    </personFlow>
+    <personFlow id="n3" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c c2w"/>
+    </personFlow>
+    <personFlow id="n4" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c w2c"/>
+    </personFlow>
+    <personFlow id="n5" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c c2e"/>
+    </personFlow>
+    <personFlow id="n6" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="n2c e2c"/>
+    </personFlow>
+
+    <personFlow id="s1" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c c2w"/>
+    </personFlow>
+    <personFlow id="s2" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c w2c"/>
+    </personFlow>
+    <personFlow id="s3" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c c2n"/>
+    </personFlow>
+    <personFlow id="s4" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c n2c"/>
+    </personFlow>
+    <personFlow id="s5" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c c2e"/>
+    </personFlow>
+    <personFlow id="s6" begin="0" end="4000" probability="0.01">
+        <walk speed="1.5" edges="s2c e2c"/>
+    </personFlow>
+
+
+
+</routes>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/28/21 20:19:59 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\744\Desktop\atsc_deeprl\sumo_file\isolate\isolate.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\744\Desktop\atsc_deeprl\sumo_file\isolate\isolate.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="true"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="center" type="static" programID="1" offset="0">
+        <phase duration="60" state="gGGrgrrrgGGrgrrrrGrG"/>
+        <phase duration="10" state="gGGrgrrrgGGrgrrrrrrr"/>
+        <phase duration="3" state="GyyrGrrrGyyrGrrrrrrr"/>
+        <phase duration="6" state="GrrGGrrrGrrGGrrrrrrr"/>
+        <phase duration="3" state="GrryGrrrGrryGrrrrrrr"/>
+        <phase duration="23" state="GrrrGGGrGrrrGGGrGrGr"/>
+        <phase duration="10" state="GrrrGGGrGrrrGGGrrrrr"/>
+        <phase duration="3" state="GrrrGyyrGrrrGyyrrrrr"/>
+        <phase duration="6" state="GrrrGrrGGrrrGrrGrrrr"/>
+        <phase duration="3" state="GrrrGrryGrrrGrryrrrr"/>
+    </tlLogic>
+</additional>
+
+<!--    <tlLogic id="center" type="static" programID="0" offset="0">-->
+<!--        <phase duration="23" state="gGGrgrrrgGGrgrrrrGrG"/>-->
+<!--        <phase duration="10" state="gGGrgrrrgGGrgrrrrrrr"/>-->
+<!--        <phase duration="3" state="GyyrGrrrGyyrGrrrrrrr"/>-->
+<!--        <phase duration="6" state="GrrGGrrrGrrGGrrrrrrr"/>-->
+<!--        <phase duration="3" state="GrryGrrrGrryGrrrrrrr"/>-->
+<!--        <phase duration="23" state="GrrrGGGrGrrrGGGrGrGr"/>-->
+<!--        <phase duration="10" state="GrrrGGGrGrrrGGGrrrrr"/>-->
+<!--        <phase duration="3" state="GrrrGyyrGrrrGyyrrrrr"/>-->
+<!--        <phase duration="6" state="GrrrGrrGGrrrGrrGrrrr"/>-->
+<!--        <phase duration="3" state="GrrrGrryGrrrGrryrrrr"/>-->
+<!--    </tlLogic>-->

@@ -1,0 +1,15 @@
+<configuration>
+  <input>
+    <net-file value="isolate.net.xml"/>
+    <route-files value="isolate_uniform.rou.xml"/>
+    <additional-files value="standard_tll.xml"/>
+  </input>
+  <time>
+    <begin value="0"/>
+    <end value="7200"/>
+    <step-length value="1"/>
+  </time>
+  <output>
+    <fcd-output value="fcd.xml"/>
+  </output>
+</configuration>
